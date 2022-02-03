@@ -1,0 +1,177 @@
+*{
+  margin:0;
+  font-family: 'Bebas Neue', cursive;
+}
+#fixed-nav{
+  position:fixed;
+  top:0;
+}
+nav{
+ width:100vw;
+ height: 50px;
+ display:flex;
+ justify-content:end;
+ top:0;
+ background-color: black;
+}
+.nav-links{
+  color:white;
+  padding: 0px 25px;
+  line-height:50px;
+  text-decoration:none;
+  font-size: 20px;
+}
+.nav-links:hover{
+ background-color: red;
+ color: black;
+}
+header{
+  width: 100%;
+  text-align: center;
+  background-color: red;
+  color: black;
+  padding: 200px  0px;
+  font-size: 30px;
+
+}
+
+#title{
+  font-size: 70px;
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+
+button{
+  background-color: blue;
+  color: white;
+  border: 3px solid black;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+button:hover{
+  background-color: red;
+  color: black;
+  border: 3px solid white;
+}
+
+a:hover + #good-choise {
+  display: block;
+}
+
+#good-choise{
+  display:none;
+  margin-top: 10px;
+  font-size: 20px;
+}
+#about{
+  width: 100%;
+  text-align: center;
+  background-color: blue;
+  color:white;
+  font-size:30px;
+  padding: 100px 0px;
+}
+
+p{
+ padding-top:50px;
+
+}
+#projects {
+  width: 100%;
+  height:400px;
+  padding: 100px 0px;
+  text-align: center;
+  background-color: red;
+}
+#contacts {
+  width: 100%;
+  text-align: center;
+  background-color: blue;
+  color:white;
+  font-size: 40px;
+  padding:100px 0px;
+}
+
+#secondtitle{
+  padding-top:50px;
+  font-size:40px;
+  justify-content: center;
+}
+#boxplace{
+  padding-top:30px;
+  display:flex;
+  justify-content: space-around;
+}
+#boxplaceone{
+  display:flex;
+ flex-direction: column;
+}
+.boxprojects{
+  height:200px;
+  width:200px;
+  border: 4px solid black;
+  border-radius: 10px;
+}
+
+.boxprojects.one{
+  background-image:url("images/Cattura.JPG");
+   background-size: cover;
+}
+.boxprojects.two{
+  background-image:url("images/Cattura2.JPG");
+   background-size: cover;
+}
+.boxprojects.three{
+  background-image:url("images/Cattura3.JPG");
+   background-size: cover;
+}
+
+.boxprojects:hover{
+  height:210px;
+  width:210px;
+}
+
+#social{
+  display:flex;
+  justify-content: space-around;
+  padding-top:30px;
+
+}
+
+.social-icon{
+  color:black;
+  text-decoration:none;
+}
+
+.social-icon:hover{
+  padding-top:10px;
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+  #boxplace{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#social{
+  display:flex;
+  flex-direction: column;
+}
+#projects {
+height:auto;
+}
+
+#boxplaceone{
+  display: flex;
+  flex-direction: column;
+}
+
+
+}

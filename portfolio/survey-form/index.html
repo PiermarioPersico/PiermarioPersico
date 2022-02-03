@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>survey form</title>
+  </head>
+  <body>
+
+    <div class="background-image">
+    <header>
+      <h1 id="title">Piermario Persico Form</h1>
+      <p id="description">Thank you for taking the time to help me improve my skills</p>
+    </header>
+    <main>
+      <form id="survey-form">
+         <div class="form-section">
+          <label id="name-label">Name</label><br>
+          <input type="text" id="name" name="name" placeholder="Enter your Name" required>
+         </div>
+
+         <div class="form-section">
+          <label id="email-label">Email</label><br>
+          <input type="email" id="email" name="email" placeholder="Enter your Email"               required>
+         </div>
+
+            <div class="form-section">
+              <label id="number-label">Age <em>(optional)</em></label><br>
+              <input type="number" id="number" name="number" placeholder="Enter your age"              min="10" max="100" required>
+            </div>
+
+            <div class="form-section">
+               <label for="dropdown">Which option best describes your current role?</label><br>
+                     <select id="dropdown">
+                         <option value="one">Student</option>
+                         <option value="two">Worker</option>
+                         <option value="three">Full Time Job</option>
+                         <option value="two">Prefer not to say</option>
+                         <option value="four" selected disabled>Select an option</option>
+                      </select>
+               </div>
+
+
+              <div class="form-section">
+                <label for="email-label">Would you recommend Piermario to a friend?</label><br>
+                <input type="radio" id="choose" name="choose" value="nope" required>Nope<br>
+                <input type="radio" id="choose" name="choose" value="scure"required>Scure<br>
+                <input type="radio" id="choose" name="choose" value="maybe"required>Maybe<br>
+              </div>
+
+        <div class="form-section">
+               <label for="dropdown">What is your favorite feature of Piermario?</label><br>
+                     <select id="dropdown">
+                         <option value="one">Face</option>
+                         <option value="two">Work</option>
+                         <option value="three">Jollycooperation</option>
+                         <option value="two">Prefer not to say( i'm embaraced)</option>
+                         <option value="four" selected disabled>Select an option</option>
+                      </select>
+               </div>
+
+          <div class="form-section">
+                <label for="email-label">What would you like to see improved? </label><br>
+                <input type="checkbox" id="choose" value="choose"required>Front-end Projects<br>
+                <input type="checkbox" id="choose" value="choose"required>Back-end Projects<br>
+                <input type="checkbox" id="choose" value="choose"required>Data Visualization<br>
+                        <input type="checkbox" id="choose" value="choose"required>Challenges<br>
+                        <input type="checkbox" id="choose" value="choose"required>Open Source Community<br>
+                        <input type="checkbox" id="choose" value="choose"required>Gitter help rooms<br>
+                        <input type="checkbox" id="choose" value="choose"required>Videos<br>
+                        <input type="checkbox" id="choose" value="choose"required>City Meetups<br>
+              </div>
+
+
+                  <div class="form-section">
+          <label for="name-label">Any comments or suggestions?</label><br>
+         <textarea id="w3review" name="comments" rows="4" cols="50" placeholder="Enter your comment here...">
+    </textarea>
+         </div>
+
+        <button id="submit"><strong>Submit!<strong></button>
+
+
+      </form>
+    </main>
+    </div>
+
+
+
+  </body>
+</html>

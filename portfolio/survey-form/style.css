@@ -1,0 +1,71 @@
+*{
+  margin:0;
+  box-sizing:border-box;
+}
+
+.background-image{
+ background-image: url("https://www.wallpapers4u.org/wp-content/uploads/shape_form_background_connections_multi-colored_63531_1920x1080.jpg");
+
+  }
+
+header{
+  color: white;
+  text-align:center;
+  padding-top:50px;
+  padding-bottom: 30px;
+}
+
+form{
+  background-color: rgba(128, 0,0, 0.5);
+  width:800px;
+  margin:auto;
+  border-radius: 10px;
+  color: white;
+  font-size: 25px;
+  padding-left: 120px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.form-section {
+ margin-top: 30px;
+
+}
+.form-section input[type='text'],
+.form-section input[type='email'],
+.form-section input[type='number'],
+select,
+textarea,
+button{
+  background-color: #FFFFFF;
+  border: 1px solid #D6D9DC;
+  border-radius: 3px;
+  width: 80%;
+  padding: 7px;
+  font-size: 14px;
+}
+.form-section input[type='text']:invalid,
+.form-section input[type='email']:invalid,
+.form-section input[type='number']:invalid{
+  border: 3px solid red;
+  color: #D55C5F;
+  box-shadow: none; /* Remove default red glow in Firefox */
+}
+.form-section input[type='radio'],
+.form-section input[type='checkbox']{
+margin-top:15px;
+}
+
+textarea{
+  height: 150px;
+  font-family:"Times New Roman", Times, serif;
+}
+
+button{
+  margin-top: 30px;
+  margin-bottom: 90px;
+  background-color: rgba(255, 0,0, 1);
+  border-radius: 30px;
+  border: 5px solid red;
+  font-size: 20px;
+}

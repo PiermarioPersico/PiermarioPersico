@@ -1,0 +1,204 @@
+*{
+  margin:0;
+  box-sizing: border-box;
+}
+
+body{
+
+    background: linear-gradient(   35deg,rgba(25, 84, 134, 1), rgba(34, 113, 179, 1),rgba(145, 185, 217, 1) )
+}
+
+nav{
+  background-color: white;
+  display: flex;
+  justify-content:space-around;
+  border-bottom: 4px solid rgba(25, 84, 134, 1);
+  padding-top: 5px;
+
+}
+h1{
+  font-family: 'Bebas Neue', cursive;
+}
+#home-link{
+  color:white;
+  text-decoration:none;
+  border-radius: 10px 10px 0px 0px;
+  font-family: 'Neonderthaw', cursive;
+  padding: 10px 10px 0px 10px;
+  background: linear-gradient(   35deg,rgba(25, 84, 134, 1), rgba(34, 113, 179, 1),rgba(145, 185, 217, 1) )
+}
+.logo-page{
+  color:white;
+  font-size: 30px;
+  background-color: white;
+}
+.page-link{
+  display: flex;
+  align-items: flex-end;
+}
+
+.nav-link{
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: 'Zen Kurenaido', sans-serif;
+  font-size: 20px;
+  padding: 20px 50px 0px 50px;
+  margin: 0px 50px;
+  text-decoration:none;
+  background-color: white;
+  border-radius: 30px 30px 0px 0px;
+  height: 0px;
+}
+
+.nav-link.contacts{
+  background: linear-gradient(   35deg,rgba(25, 84, 134, 1), rgba(34, 113, 179, 1),rgba(145, 185, 217, 1) );
+  color:white;
+  border-radius: 30px 30px 0px 0px;
+  height: 50px;
+}
+
+.nav-link.portfolio{
+  background:linear-gradient(35deg,rgba(114, 64, 114, 1), rgba(152, 86, 152, 1),rgba(204, 171, 204, 1) );
+}
+
+.nav-link.bio{
+  background: linear-gradient(35deg,rgba(153, 99, 47, 1), rgba(205, 133, 63, 1),rgba(230, 194, 160, 1) );
+}
+
+.nav-link.bio:hover,
+.nav-link.portfolio:hover{
+  color:white;
+  /* animazione cambio colore */
+  animation-name: link-height;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes link-height {
+ 0%{
+    height: 0px;
+ }
+  100% {
+    height: 50px;
+  }
+}
+
+main{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+  color: white;
+  font-size: 20px;
+}
+
+#profile-photo{
+  height:80px;
+  border-radius: 50px;
+  border: 4px solid rgba(25, 84, 134, 1);
+}
+
+.contacts-section{
+  border: 5px solid white;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 50px 0px;
+  width: auto;
+
+}
+.fa {
+  padding: 20px;
+  margin:20px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  border:2px solid white;
+}
+.fa:active{
+  opacity: 0.4;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  padding: 20px 23px ;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.social{
+  padding:10px;
+}
+
+.email-number{
+  display: inline-block;
+  color:white;
+  padding: 30px;
+}
+
+.form-section{
+  padding: 20px;
+}
+
+button{
+  color:white;
+  background: linear-gradient(   35deg,rgba(25, 84, 134, 1), rgba(34, 113, 179, 1),rgba(145, 185, 217, 1) );
+  padding: 10px 20px;
+  border:2px solid white;
+  border-radius: 10px;
+}
+button:hover{
+  cursor: pointer;
+}
+button:active{
+  opacity: 0.5;
+}
+
+label{
+  font-family: 'Zen Kurenaido', sans-serif;
+}
+
+.form-section input[type='text'],
+.form-section input[type='email'],
+ textarea{
+  border-radius: 10px;
+  border: 4px solid white;
+  background: linear-gradient(   35deg,rgba(25, 84, 134, 1), rgba(34, 113, 179, 1),rgba(145, 185, 217, 1) );
+  font-family: cursive;
+  font-size: 20px;
+  color:white;
+}
+.form-section input[type='text']:invalid,
+.form-section input[type='email']:invalid{
+  border: 2px solid red;
+  color: #D55C5F;
+  box-shadow: none; /* Remove default red glow in Firefox */
+}
+footer{
+  text-align: center;
+  font-family: 'Bebas Neue', cursive;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  padding:20px;
+
+}
+
+footer a{
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover{
+  color:red;
+}
