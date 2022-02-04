@@ -244,5 +244,9 @@ justify-content: center;
   background: linear-gradient(   35deg,rgba(25, 84, 134, 1), rgba(34, 113, 179, 1),rgba(145, 185, 217, 1) );
   border-radius: 0px 0px 30px 0px;
 }
+textarea{
+  width: 100%;
+}
+
 
 }
