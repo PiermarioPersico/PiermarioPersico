@@ -82,7 +82,9 @@ h1{
     height: 50px;
   }
 }
-
+.mobile-nav{
+  display: none;
+}
 main{
   width: 80%;
   margin: auto;
@@ -184,14 +186,13 @@ label{
   box-shadow: none; /* Remove default red glow in Firefox */
 }
 footer{
-  text-align: center;
   font-family: 'Bebas Neue', cursive;
   color: white;
   display: flex;
   flex-direction: column;
   font-size: 20px;
   padding:20px;
-
+  text-align: center;
 }
 
 footer a{
@@ -201,4 +202,47 @@ footer a{
 
 footer a:hover{
   color:red;
+}
+footer p{
+  color: black;
+}
+/* Mobile Styles */
+@media only screen and (max-width:1200px) {
+nav{
+  display: none;
+}
+.mobile-nav{
+  display: block;
+  text-align: center;
+}
+
+.logo-page{
+  font-size: 25px;
+}
+.mobile-link{
+padding:20px;
+text-decoration: none;
+color:white;
+display:block;
+}
+
+.page-link{
+display: flex;
+justify-content: center;
+}
+
+.mobile-link.bio{
+  background: linear-gradient(35deg,rgba(153, 99, 47, 1), rgba(205, 133, 63, 1),rgba(230, 194, 160, 1) );
+  border-radius: 0px 0px 0px 30px;
+}
+
+.mobile-link.portfolio{
+  background: linear-gradient(35deg,rgba(114, 64, 114, 1), rgba(152, 86, 152, 1),rgba(204, 171, 204, 1) );
+}
+
+.mobile-link.contacts{
+  background: linear-gradient(   35deg,rgba(25, 84, 134, 1), rgba(34, 113, 179, 1),rgba(145, 185, 217, 1) );
+  border-radius: 0px 0px 30px 0px;
+}
+
 }

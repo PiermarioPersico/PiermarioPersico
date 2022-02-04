@@ -137,4 +137,13 @@ main{
     flex-direction: column;
     align-items: center;
   }
+  #title-section{
+    text-align: center;
+    padding: 100px 0px;
+;
+  }
+  #scroll-adv{
+    color:white;
+    margin: 0px 0px 50px 0px;
+  }
 }
