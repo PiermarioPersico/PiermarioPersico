@@ -211,13 +211,28 @@ footer p{
 nav{
   display: none;
 }
+
+/* page-link size */
+div a{
+  font-size: 60px;
+  font-family: 'Zen Kurenaido', sans-serif;
+}
+
 .mobile-nav{
   display: block;
   text-align: center;
 }
+#profile-photo{
+  height:100px;
+}
 
 .logo-page{
-  font-size: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.logo-page a{
+  font-size: 85px;
 }
 .mobile-link{
 padding:20px;
@@ -244,9 +259,37 @@ justify-content: center;
   background: linear-gradient(   35deg,rgba(25, 84, 134, 1), rgba(34, 113, 179, 1),rgba(145, 185, 217, 1) );
   border-radius: 0px 0px 30px 0px;
 }
+h1{
+  font-size: 100px;
+}
+section{
+  font-size: 50px;
+}
+.fa {
+  padding: 40px;
+  margin:20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  border:2px solid white;
+}
+
+.fa-facebook {
+  padding: 40px 50px ;
+}
 textarea{
   width: 100%;
 }
 
+.form-section input[type='text'],
+.form-section input[type='email'],
+textarea,
+button{
+  font-size: 45px;
+}
+footer a,
+footer p{
+  font-size: 50px;
+}
 
 }
