@@ -3,10 +3,6 @@
   box-sizing: border-box;
 }
 
-
-
-
-
 main{
   background: linear-gradient(90deg,rgba(205, 133, 63, 0.9), rgba(152, 86, 152, 1),rgba(34, 113, 179, 0.9) ), url('../img/clarinet-header.jpg');
   background-size: cover;
@@ -23,7 +19,7 @@ main{
   color: white;
   font-size: 30px;
 }
-
+ /* testi attorno al titolo */
 .font-classic{
   font-family: initial;
 }
@@ -33,30 +29,19 @@ main{
   font-size: 100px;
 }
 
-
-#initial-button{
-  font-family: 'Bebas Neue', cursive;
-  display: inline-block;
-  margin-top: 30px;
-  padding: 10px;
-  text-decoration: none;
-  color: white;
-  border: 2px solid white;
-  border-radius: 3px;
-}
-
+/* scorri e scopri tutto di me */
 #scroll-adv{
   color:white;
   margin: 50px 0px 100px 0px;
 }
-
-
 
 /* sezione principale del sito */
 #main-content{
   display: flex;
   justify-content: space-around;
 }
+
+/* tasti all'interno dei box */
 .box-link{
   display: inline-block;
   border-radius: 5px;
@@ -81,14 +66,17 @@ main{
   flex-direction: column;
   justify-content: space-around;
 }
+
+.box-link:hover{
+  color: white;
+  border: 1px solid white;
+}
 /* box biografia */
 .box.one{
   background-color:  #CD853F;
 }
 .box-link.one:hover{
   background-color: #CD853F;
-  color: white;
-  border: 1px solid white;
 }
 
 /* box portfolio */
@@ -98,8 +86,6 @@ main{
 
 .box-link.two:hover{
   background-color:#985698;
-  color: white;
-  border: 1px solid white;
 }
 
 /* box contatti */
@@ -109,18 +95,18 @@ main{
 
 .box-link.three:hover{
   background-color:#2271B3;
-  color: white;
-  border: 1px solid white;
 }
 
 
 /* Mobile Styles */
 @media only screen and (max-width:600px) {
+  
   #title-section{
     text-align: center;
     padding: 400px 0px;
     font-size: 30px;
   }
+
   #scroll-adv{
     color:white;
     margin-bottom: 100px;
@@ -137,13 +123,4 @@ main{
     padding: 100px 0px;
   }
 
-  #scroll-adv{
-    color:white;
-    margin: 0px 0px 50px 0px;
-  }
-
-  .box-one,
-  .box-two,{
-
-  }
 }
