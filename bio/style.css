@@ -56,11 +56,13 @@ nav{
   height: 50px;
 }
 
-.nav-link.portfolio{
+.nav-link.portfolio,
+.mobile-link.portfolio{
   background: linear-gradient(35deg,rgba(114, 64, 114, 1), rgba(152, 86, 152, 1),rgba(204, 171, 204, 1) );
 }
 
-.nav-link.contacts{
+.nav-link.contacts,
+.mobile-link.contacts{
   background: linear-gradient(35deg,rgba(25, 84, 134, 1), rgba(34, 113, 179, 1),rgba(145, 185, 217, 1) )
 }
 
@@ -222,12 +224,7 @@ justify-content: center;
   border-radius: 0px 0px 0px 30px;
 }
 
-.mobile-link.portfolio{
-  background: linear-gradient(35deg,rgba(114, 64, 114, 1), rgba(152, 86, 152, 1),rgba(204, 171, 204, 1) );
-}
-
 .mobile-link.contacts{
-  background: linear-gradient(35deg,rgba(25, 84, 134, 1), rgba(34, 113, 179, 1),rgba(145, 185, 217, 1) );
   border-radius: 0px 0px 30px 0px;
 }
 #about-photo{
