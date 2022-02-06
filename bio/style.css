@@ -227,6 +227,14 @@ justify-content: center;
 .mobile-link.contacts{
   border-radius: 0px 0px 30px 0px;
 }
+
+.mobile-link.bio:active,
+.mobile-link.portfolio:active,
+.mobile-link.contacts:active{
+  opacity: 0,4;
+  color: black;
+}
+
 #about-photo{
   height:500px;
   margin:20px 0px;
