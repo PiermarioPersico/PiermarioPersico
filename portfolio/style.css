@@ -185,7 +185,7 @@ main{
 /* arcad games background */
 .box-work.five{
   background:url("../assets/img/cosmic.png");
-  background-size: contain;
+  background-size: cover;
 }
 footer{
   font-family: 'Bebas Neue', cursive;
